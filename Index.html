@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+
+<body>
+
+    <div id="main" class="container-fluid">
+
+        <header class="jumbotrom-fluid item">
+            <h1 class="text-center">Pokemon Catalog</h1>
+            <p class="text-center">Explore the fantastic world of Pokemons</p>
+        </header>
+        <section class="search-bar item">
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Enter name">
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-block btn-success">Search</button>
+                </div>
+            </div>
+        </section>
+        <main class="item">
+            <ul id="poke-list" class="pokedex"></ul>
+            <button id="more-btn" type="button" class="btn btn-secondary">More</button>
+        </main>
+    </div>
+
+    <script src="Main.js"></script>
+
+</body>
+
+</html>

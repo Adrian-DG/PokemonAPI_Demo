@@ -1,0 +1,125 @@
+.item {
+    border: 1px solid black;
+}
+
+#main {
+    min-height: 100vh;
+    height: auto;
+}
+
+header {
+    min-height: 25vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 74, 74);
+}
+
+header h1 {
+    color: rgb(255, 255, 86);
+    font-weight: bold;
+}
+
+header p {
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar {
+    height: 7vh;
+    padding: 1em;
+    background-color: rgb(240, 240, 240);
+}
+
+main {
+    width: 100%;
+    min-height: 68vh;
+    height: auto;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pokedex {
+    width: 98%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    border: 1px solid red;
+}
+
+.card {
+    height: 35vh;
+}
+
+.poke-card {
+    list-style: none;
+    width: 11%;
+    margin: 1em;
+}
+
+.poke-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gainsboro;
+}
+
+.card-body {
+    background-color: gainsboro;
+    color: rgb(54, 53, 53);
+    padding-bottom: 0.5em;
+}
+
+.card-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.types {
+    width: 100%;
+    
+}
+
+.types ul {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.more .btn {
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+
+#more-btn {
+    width: 10%;
+    border: none;
+}
+

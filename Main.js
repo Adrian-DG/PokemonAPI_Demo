@@ -5,7 +5,7 @@ const pokedex = document.getElementById('poke-list')
 const moreBtn = document.getElementById('more-btn')
 
 const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14]
-const ids_len = ids.length
+let ids_len = ids.length
 
 moreBtn.onclick = function(){
     const array = []
@@ -14,7 +14,8 @@ moreBtn.onclick = function(){
     }
     
     ids_len += 7
-    // console.log(array)
+
+    console.log(array)
     fillPokedex(array)
 }
 

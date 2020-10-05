@@ -14,8 +14,11 @@ moreBtn.addEventListener('click', async () => {
         ids_len += i
     }
    
-    fillPokedex(array)
-   
+    const pokemons = array.map(async (id) => {
+        return await (await fetch(`${API_URL}${POKEMON_URL.replace(':id', id)}`)).json() 
+    })
+    const promises = await Promise.all(pokemons)
+    promises.forEach(el => to_html(el))
 })
 
 // Renders the pokemon card info to pokedex list (<ul>)

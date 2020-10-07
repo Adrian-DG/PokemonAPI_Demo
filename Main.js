@@ -7,18 +7,20 @@ const moreBtn = document.getElementById('more-btn')
 const ids = [1, 2, 3, 4, 5, 6, 7]
 let ids_len = ids.length
 
-moreBtn.addEventListener('click', async () => {
+// on button click a API request is submitted 
+moreBtn.addEventListener('click', async() => {
     let array = []
     for(let i=1; i<7; i++){
-        array.push(i+ids_len)
+        array.push(i+ids_len) // add the next seven numbers to array
         ids_len += i
     }
    
+    // fetch API based on array numbers 
     const pokemons = array.map(async (id) => {
         return await (await fetch(`${API_URL}${POKEMON_URL.replace(':id', id)}`)).json() 
     })
     const promises = await Promise.all(pokemons)
-    promises.forEach(el => to_html(el))
+    promises.forEach(el => to_html(el)) // structure to html
 })
 
 // Renders the pokemon card info to pokedex list (<ul>)

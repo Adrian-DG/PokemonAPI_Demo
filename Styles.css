@@ -61,8 +61,12 @@ main {
 }
 
 .card {
-    height: 35vh;
+    height: 40vh;
     color: rgb(83, 83, 83);
+}
+
+.card .btn {
+    margin-top: 1em;
 }
 
 .poke-card {
@@ -86,6 +90,10 @@ main {
 .card-body {
     border-top: 1px solid gainsboro;
     background-color: rgb(233, 232, 232);
+}
+
+.card-text {
+    height: 3em;
 }
 
 #more-btn {

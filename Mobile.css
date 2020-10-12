@@ -1,0 +1,87 @@
+/*
+.item {
+    border: 1px solid black;
+}
+*/
+
+
+
+
+
+#main {
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh 10vh 60vh;
+}
+
+header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.navbar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokedex {
+    width: 95%;
+    height: 90%;
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.pokedex li {
+    list-style: none;
+}
+
+.poke-card {
+    width: 65%;
+    height: 10%vh;
+    margin-right: 1em;
+}
+
+.poke-img {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-body {
+    border-top: 1px solid gainsboro;
+    background-color: rgb(233, 232, 232);
+}
+
+.card-text {
+    height: 3em;
+}
+
+#more-btn {
+    width: 40%;
+}

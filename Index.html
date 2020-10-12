@@ -6,9 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Styles.css">
+    <style>
+        #main {
+            width: 100vw;
+            min-height: 100vh;
+            height: auto;
+            display: grid;
+        }
 
+        header {
+            background-color: rgb(226, 74, 74);
+        }
+
+        header h1 {
+            color: rgb(255, 255, 86);
+            font-weight: bold;
+        }
+
+        header p {
+            color: white;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            height: 7vh;
+            padding: 1em;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .pokedex {
+            border: 1px solid gainsboro;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" media="only screen and (min-width: 425px)" href="Tablet.css">
+    <link rel="stylesheet" media="only screen and (max-width: 425px)" href="Mobile.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -33,7 +68,7 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="Main.js"></script>
 
-   
+
 </body>
 
 </html>
